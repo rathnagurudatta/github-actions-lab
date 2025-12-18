@@ -1,0 +1,17 @@
+name: Simple Test Workflow
+
+on:
+  push:
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step 1 - Checkout code
+        uses: actions/checkout@v4
+
+      - name: Step 2 - Simulate a test
+        run: |
+          echo "Running tests..."
+          echo "All tests passed ✅"
