@@ -14,4 +14,4 @@ jobs:
       - name: Step 2 - Simulate a test
         run: |
           echo "Running tests..."
-          echo "All tests passed ✅"
+          exit 1
